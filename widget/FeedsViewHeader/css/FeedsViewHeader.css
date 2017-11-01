@@ -1,0 +1,67 @@
+
+.FeedsViewHeader{
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.FeedsViewHeaderLogo{
+	height:90%;
+	top:0px;
+	left:0px;
+	margin-top: 2%;
+	margin-left: 2%;
+	float:left;
+	position:static;
+}
+
+.FeedsViewHeaderEnterpriseName{
+	color: black;
+	font-weight: bold;
+	float:left;
+	margin-top: 5%;
+	margin-left: 5%;
+	font-size: larger;
+}
+
+.FeedsViewHeaderdatePublished{
+	color: lightslategray;
+	font-size: 0.75em;
+	float:left;
+	margin-left: 5%;
+	margin-top: 2%;
+	width: 65%;
+}
+
+.FeedsViewHeaderCallButton{
+	color: red;
+	/*border-width: 2px;*/
+	border-left-color:grey;
+	border-left-width:2px;
+	border-right-width:0px;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background: white;
+	width: 15%;
+	height: 100%;
+	display: inline;
+	float: right;
+}
+
+.FeedsViewHeaderFollowButton{
+	color: red;
+	/*border-width: 2px;*/
+	border-left-width:0px;
+	border-right-width:0px;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background: white;
+	width: 15%;
+	height: 100%;
+	display: inline;
+	float: right;
+}
+
+.FeedsViewHeaderInfoPane{
+	height: 15%;
+}

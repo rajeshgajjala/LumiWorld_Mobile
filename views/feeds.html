@@ -1,0 +1,15 @@
+<div data-dojo-type="dojox/mobile/View" id="FeedsScreen" style="width: 100%; height: 100%; background-color: white;">	
+
+	<div id="header"></div>
+	<div data-dojo-type="dojox/mobile/PullView" id="RefreshView" style="width: 100%; background-color:white; height:auto; margin-bottom:48px;">
+		<div id="pullMessageBox" style="height: 65px">
+			<img src="./images/icons/ajax-loader-big.gif" style="margin-left:auto; margin-right:auto; display:block;">
+		</div>
+		<ul data-dojo-type="dojox/mobile/EdgeToEdgeList" data-dojo-mixins="dojox/mobile/LongListMixin" id="NotificationList" style="width: 100%; height:100%; background-color:white; -webkit-backface-visibility:hidden;"></ul>
+		<div id="pushMessageBox" style="height: 65px; position:absolute; bottom:-65px; width:100%">
+			<div id="displayMessage" style="width:100%; text-align:center;">Fetching Messages</div>
+			<img id="messageProgIndicator" src="./images/icons/ajax-loader-big.gif" style="margin-left:auto; margin-right:auto; display:block;">
+		</div>
+	</div>
+	<div id="HUD"></div>
+</div>	

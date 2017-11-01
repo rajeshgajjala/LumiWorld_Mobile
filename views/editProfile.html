@@ -1,0 +1,19 @@
+<div data-dojo-type="dojox/mobile/View" id="EditProfileScreen"
+	style="width: 100%; height: 100%; background-color:rgb(236,241,244); background-repeat: no-repeat; background-size: cover; background-position: center center;" selected="true">
+	<div id="editProfileHeader"></div>
+	<div style="margin-top:10%; background-color:white; box-shadow: 0px 2px 5px #888888; padding:5%;" id="ProfileForm" data-dojo-id="ProfileForm" data-dojo-type="dijit/form/Form">
+		<div id="editProfileTitle" style="width:100%; color:black; text-align:center; margin-bottom:6%">Please enter your first name, last name and choose a Luminet World display name:</div>
+		<label id="profile.firstNameLabel" for="profile.firstName">First Name:</label>
+		<input type="text" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="intermediateChanges:false, required: false, placeHolder:'First Name', missingMessage:'', invalidMessage:'', promptMessage:'', message:''" data-dojo-id="profile.firstName" id="profile.firstName" name="firstName" style="width: 99%; margin-top:1%; margin-bottom:1%;" /><br/>
+		<label id="profile.lastNameLabel" for="profile.lastName">Last Name:</label>
+		<input type="text" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="intermediateChanges:false, required: false, placeHolder:'Last Name', missingMessage:'', invalidMessage:'', promptMessage:'', message:''" data-dojo-id="profile.lastName" id="profile.lastName" name="lastName" style="width: 99%; margin-top:1%; margin-bottom:1%;" /><br/>
+		<label id="profile.displayNameLabel" for="profile.displayName">Display Name*:</label>
+		<input type="text" data-dojo-type="dijit/form/ValidationTextBox" data-dojo-props="intermediateChanges:false, required: true, placeHolder:'Display Name*', missingMessage:'', invalidMessage:'', promptMessage:'', message:''" data-dojo-id="profile.displayName" id="profile.displayName" name="displayName" style="width: 99%; margin-top:1%; margin-bottom:5%;" />
+		<div id="instructionText" style="font-size:0.75em; color:gray; text-align:center; width:100%;">* Compulsory Fields</div>
+	</div>
+	
+	<!--<div style="margin-top:10%; background-color:white; box-shadow: 0px 2px 5px #888888; padding:5%;">
+		<div>Push Notifications: <div id="profile.PushNotifications" class="mblSwRoundShape1" data-dojo-type="dojox/mobile/Switch" value="on" leftLabel="On" rightLabel="Off"></div></div>
+	</div>-->
+	<div style="font-size:0.8em; text-align:center; color:black;" id="RegisterText">By Registering on Luminet World you accept the </br><span id="TermsLink" style="text-decoration:underline;">Terms & Conditions</span></div>
+</div>

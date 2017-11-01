@@ -1,0 +1,82 @@
+
+.navigationHUD{
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
+
+.navigationHUDLabel{
+	color: red;
+	width: 33%;
+	z-index:100;
+	top: 0px;
+}
+
+.navigationHUDBackGround{
+	width: 100%; 
+	bottom: 0px; 
+	left: 0px; 
+	position: absolute;
+}
+
+.navigationHUDbackButton{
+	width: 100%;
+	height: 10%;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	z-index: 900;
+	border: 0px;
+	background-color:rgba(255,255,255,0);
+	opacity: 1;
+	color: red;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.navigationHUDNavButtonx{
+	position:fixed;
+	height:6%;
+	width:100%;
+	/*margin-left:10%;
+	margin-right:10%;*/
+	padding:0px;
+	border-top-width:1%;
+	border-left-width:0px;
+	border-right-width:0px;
+	border-bottom-width:0px;
+	border-color:red;
+	background-color:rgba(255,255,255,1);
+}
+
+.navigationHUDsettingsButton{
+	/*width: 10%;*/
+	height: 10%;
+	bottom: 0px;
+	right: 0px;
+	margin-bottom: 3%;
+	margin-right: 0px;
+	border: 0px;
+	padding: 0px;
+	position: fixed;
+	z-index: 901;
+	background-color:rgba(255,255,255,0);
+	opacity: 1;
+	color: red;
+}
+
+.navigationHUDinterestButton{
+	/*width: 10%;*/
+	height: 10%;
+	bottom: 0px;
+	left: 0px;
+	margin-bottom: 3%;
+	margin-left: 0px;
+	border: 0px;
+	padding: 0px;
+	position: fixed;
+	z-index: 901;
+	background-color:rgba(255,255,255,0);
+	opacity: 1;
+	color: red;
+}

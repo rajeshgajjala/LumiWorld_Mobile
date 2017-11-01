@@ -1,0 +1,38 @@
+.mblListItemRightIcon{
+	height:26px;
+}
+
+.mblScrollablePane{
+	height:81%
+}
+
+.mblListItemIcon{
+	height: 35px;
+	margin-top: 7px;
+	margin-bottom: 0px;
+	display: box;
+}
+
+.mblListItemRightText{
+	color: gray;
+	font-size:0.8em;
+	text-shadow:1px 0px 1px lightgray;
+	
+}
+
+.mblListItemLabel{
+	display: inline;
+	color:black;
+}
+
+.mblEdgeToEdgeCategory{
+	text-transform:capitalize;
+}
+
+.mblListItem{
+	color:black;
+}
+
+p{
+	-webkit-margin-before:1%;
+}

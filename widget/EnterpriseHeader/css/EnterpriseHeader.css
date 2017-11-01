@@ -1,0 +1,84 @@
+
+.EnterpriseHeader{
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.EnterpriseHeaderLogo{
+	width:32%;
+	top:0px;
+	left:0px;
+	margin-top: 15%;
+	margin-left: 5%;
+	float:left;
+	position:static;
+}
+
+.EnterpriseHeaderEnterpriseName{
+	color: black;
+	font-weight: bold;
+	width:50%;
+	float:right;
+	margin-top: 15%;
+}
+
+.EnterpriseHeaderEnterpriseShort{
+	color: black;
+	font-size: 0.6em;
+	float:right;
+	width:50%;
+}
+
+.EnterpriseHeaderActionButton{
+	color: red;
+	/*border-width: 2px;*/
+	border-left-color:grey;
+	border-left-width:2px;
+	border-right-width:0px;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background: white;
+	/*width: 15%;*/
+	height: 100%;
+	display: inline;
+	background: white;
+	float: right;
+}
+
+.EnterpriseHeaderFollowButton{
+	color: red;
+	/*border-width: 2px;*/
+	border-left-width:0px;
+	border-right-width:0px;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	background: white;
+	width: 50%;
+	height: 100%;
+	display: inline;
+	background: white;
+	float: left;
+    padding-left: 5%;
+}
+
+.EnterpriseHeaderActionButtonGreyed{
+	color: white;
+	border-radius: 5px;
+	/*border-width: 2px;*/
+	border-top-color: #C0C0C0;
+	border-left-color: #C0C0C0;
+	border-right-color: #C0C0C0;
+	border-bottom-color:black;
+	background: #C0C0C0;
+	width: 32%;
+	height: 6%;
+	display: inline;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C0C0C0), to(#000000));
+	background: -webkit-linear-gradient(top, ##C0C0C0, #000000);
+}
+
+.EnterpriseHeaderInfoPane{
+	height: 41%;
+	background-color: whitesmoke;
+}

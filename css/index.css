@@ -1,0 +1,125 @@
+ 
+ .mblBackground{
+	background-color: #FFFFFF;
+ }
+
+.dijitPlaceHolder{
+        color: #AAAAAA;
+        font-style: italic;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events:none;
+} 
+
+.mblListItemRightIcon2{
+	height:26px;
+	margin-right:2px;
+}
+
+.mblListItem{
+	 -webkit-perspective: 1000;
+}
+
+@-webkit-keyframes cf3FadeInOut {
+	0% {opacity:1;}
+	28% {opacity:1;}
+	33% {opacity:0;}
+	95% {opacity:0;}
+	100% {opacity:1;}
+}
+	
+#cf {
+	position:relative;
+	margin:0 auto;
+}
+
+#cf img.second {
+	position:absolute;
+	left:0;
+	-webkit-animation-name: cf3FadeInOut;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 21s;
+	-webkit-animation-direction: normal;
+	opacity:0;
+}
+
+#cf img.third {
+	position:absolute;
+	left:0;
+	-webkit-animation-name: cf3FadeInOut;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 21s;
+	-webkit-animation-direction: normal;
+	opacity:0;
+}
+
+#cf img.forth {
+	position:absolute;
+	left:0;
+	-webkit-animation-name: cf3FadeInOut;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 21s;
+	-webkit-animation-direction: normal;
+	opacity:0;
+}
+
+#cf img:nth-of-type(2) {
+	-webkit-animation-delay: 0s;
+}
+#cf img:nth-of-type(3) {
+	-webkit-animation-delay: 7s;
+}
+#cf img:nth-of-type(4) {
+	-webkit-animation-delay: 14s;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url('../fonts/Roboto-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url('../fonts/Roboto-BoldItalic-.ttf') format('opentype');
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url('../fonts/Roboto-Bold.ttf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), url('../fonts/Roboto-Italic.ttf') format('opentype');
+	font-style: italic;
+}
+
+a{
+	text-decoration:underline;
+}
+
+#ProfileForm label{
+	color:gray;
+}
+
+.rotator{
+    background-color:#fff;
+    border:solid 1px #e5e5e5;
+    width:400px;
+    height:100px;
+    overflow:hidden;
+}
+
+.pane{
+    background-color:#fff;
+    width:400px;
+    height:100px;
+    overflow:hidden;
+}

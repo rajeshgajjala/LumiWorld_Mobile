@@ -1,0 +1,47 @@
+.mblCustomPullViewPullBox {
+	height: 65px;
+	padding-bottom: 8px;
+}
+.mblCustomPullViewIcon {
+	float: left;
+	margin: 4px 42px 8px 22px;
+}
+.mblCustomPullViewMsg1 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+.mblCustomPullViewMsg2 {
+	font-size: 12px;
+	bottom: 6px;
+}
+.mblCustomPullViewProg {
+	position: absolute;
+	padding: 25px;
+}
+.mblCustomPullViewMsg0 {
+	position: relative;
+	margin: 30px auto 4px auto;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.mblCustomPullViewKnobWrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 110px;
+	height: 10px;
+	background-color: #8c9694;
+	border: 1px inset gray;
+	border-radius: 2px;
+	font-size: 1px;
+}
+.mblCustomPullViewKnob {
+	position: absolute;
+	width: 10px;
+	height: 9px;
+	background-color: #42df29;
+	border: 1px outset gray;
+	border-radius: 2px;
+	font-size: 1px;
+}

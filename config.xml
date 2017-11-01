@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.luminet.worldtest" version="0.5.28.125" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Luminet World Test</name>
+    <description>
+        Leading Connectedness.
+    </description>
+    <author email="ivan@luminetgroup.com" href="http://www.luminetworld.com">
+        Luminet Group
+    </author>
+    <access origin="*" />
+    <preference name="Fullscreen" value="false" />
+	<preference name="Orientation" value="portrait" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+	<preference name="splashscreen" value="splash.9" />
+	<preference name="splashScreenDelay" value="100000" />
+	<preference name="AutoHideSplashScreen" value="false" />
+	<preference name="ShowSplashScreenSpinner" value="false"/>
+	<preference name="KeyboardShrinksView" value="false"/>
+	<preference name="HideKeyboardFormAccessoryBar" value="true"/>
+    <content src="LuminetWorld/index.html" />
+	<feature name="Storage">
+		<param name="android-package" value="org.apache.cordova.Storage" />
+	</feature>
+	<feature name="SplashScreen">
+		<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+	</feature>
+	<feature name="InAppBrowser">
+		<param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+	</feature>
+</widget>

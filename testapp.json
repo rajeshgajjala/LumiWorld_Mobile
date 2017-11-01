@@ -1,0 +1,255 @@
+{
+    "id": "LuminetWorld",
+    "dependencies": [
+        "dijit/dijit",
+        "dojox/mobile",
+        "dojox/mobile/deviceTheme",
+        "dojox/mobile/ContentPane",
+        "dojox/mobile/Button",
+        "dijit/layout/ContentPane",
+		"dojox/mobile/ContentPane",
+		"dijit/form/ValidationTextBox",
+		"dijit/form/Button",
+		"dojox/mobile/CheckBox",
+        "dojox/mobile/ScrollablePane",
+        "dojox/mobile/View",
+        "dojox/mobile/PullView",
+        "dojox/mobile/ProgressIndicator",
+		"dojox/validate/web",
+        "dojo/store/Memory",
+        "dojo/store/Observable",
+		"dcordova/CordovaStore",
+		"dijit/form/Form",
+		"dojox/mobile/Badge",
+        "dojox/mobile/Switch",
+		"dojox/mobile/LongListMixin"
+    ],
+    "controllers": [
+        "dojox/app/controllers/Load",
+        "dojox/app/controllers/Transition",
+        "dojox/app/controllers/Layout"
+    ],
+    "defaultView": "walkthrough",
+    "stores": {
+        "NewsFeeds": {
+            "type": "dcordova/CordovaStore",
+            "observable": "true",
+            "params": {
+				"dbTableName":"Newsfeeds",
+				"tableColumns":["id unique", "ImageURL", "NewsFeedBody", "NewsFeedHeader", "Tags", "createdTime", "enterpriseID", "expiryTime", "guid", "status", "publishedTime", "reachedConsumers", "searchID"],
+				"databaseName":"LuminetWorldNewsfeeds",
+				"databaseDisplayName":"LuminetWorldNewsfeeds"
+            }
+        },
+        "Sectors": {
+            "type": "dojo/store/Memory",
+            "observable": true,
+            "params": {
+                "data": [
+					{
+						"displayName": "Communications",
+                        "id": 1
+					},
+					{
+						"displayName": "Communities",
+                        "id": 2
+					},
+					{
+						"displayName": "Education",
+                        "id": 3
+					},
+					{
+						"displayName": "Entertainment",
+                        "id": 4
+					},
+					{
+						"displayName": "Finances",
+                        "id": 5
+					},
+					{
+						"displayName": "Health & Beauty",
+                        "id": 6
+					},
+					{
+						"displayName": "Home & Shopping",
+                        "id": 7
+					},
+					{
+						"displayName": "Sport & Recreation",
+                        "id": 8
+					},
+					{
+						"displayName": "Travel & Transport",
+                        "id": 9
+					},
+					{
+						"displayName": "Professional Services",
+                        "id": 10
+					}
+                ]
+            }
+        },
+        "Enterprises": {
+			"type": "dcordova/CordovaStore",
+            "params": {
+				"dbTableName":"Enterprises",
+				"tableColumns":["id unique", "companyRegistrationNumber", "contactNumber", "displayName", "emailAddress", "enterpriseLogo", "logoURL", "parentid", "shortDescription", "status"],
+				"databaseName":"LuminetWorldEnterprises",
+				"databaseDisplayName":"LuminetWorldEnterprises"
+			}
+        },
+		"ConnectedEnterprises": {
+			"type": "dojo/store/Memory",
+            "observable": "true",
+            "params": {
+				"idProperty":"ID"
+			}
+		},
+        "Services": {
+            "type": "dojo/store/Memory",
+            "observable": "true",
+            "params": []
+        },
+        "ServiceLookup": {
+            "type": "dojo/store/Memory",
+            "observable": "true",
+            "params": []
+        },
+        "InterestedIn": {
+            "type": "dojo/store/Memory",
+            "observable": "true",
+            "params": []
+        },
+        "filters": {
+            "type": "dojo/store/Memory",
+            "observable": "true",
+            "params": {
+                "data": [
+                    {
+                        "id": "0",
+                        "label": "Sort By Newest"
+                    },
+                    {
+                        "id": "2",
+                        "label": "Sort By Enterprise"
+                    },
+                    {
+                        "id": "4",
+                        "label": "Sort By Lifestyle Categories"
+                    }
+                ]
+            }
+        },
+        "ports": {
+            "type": "dojo/store/Memory",
+            "observable": "false",
+            "params": {
+                "data": [
+                    {
+                        "name": "sectors",
+                        "port": ":11000/"
+                    },
+                    {
+                        "name": "categories",
+                        "port": ":11001/"
+                    },
+                    {
+                        "name": "enterprises",
+                        "port": ":11002/"
+                    },
+                    {
+                        "name": "newsfeeds",
+                        "port": ":11003/"
+                    },
+                    {
+                        "name": "services",
+                        "port": ":11004/"
+                    },
+                    {
+                        "name": "enterpriseservices",
+                        "port": ":11005/"
+                    },
+                    {
+                        "name": "interestedin",
+                        "port": ":11006/"
+                    },
+					{
+					    "name": "connected",
+                        "port": ":11014/"
+					}
+                ]
+            }
+        }
+    },
+    "defaultTransition": "slide",
+    "views": {
+        "home": {
+            "controller": "./views/home",
+            "template": "./views/home.html"
+        },
+        "feeds": {
+            "controller": "./views/feeds",
+            "template": "./views/feeds.html"
+        },
+        "tier": {
+            "controller": "./views/tier",
+            "template": "./views/tier.html"
+        },
+        "enterprise": {
+            "controller": "./views/enterprise",
+            "template": "./views/enterprise.html"
+        },
+        "filter": {
+            "controller": "./views/filter",
+            "template": "./views/filter.html"
+        },
+		"login": {
+            "controller": "./views/login",
+            "template": "./views/login.html"
+        },
+		"walkthrough": {
+            "controller": "./views/walkthrough",
+            "template": "./views/walkthrough.html"
+        },
+		"profile": {
+            "controller": "./views/profile",
+            "template": "./views/profile.html"			
+		},
+		"editProfile": {
+            "controller": "./views/editProfile",
+            "template": "./views/editProfile.html"			
+		},
+		"editPassword": {
+            "controller": "./views/editPassword",
+            "template": "./views/editPassword.html"			
+		},
+		"about": {
+            "controller": "./views/about",
+            "template": "./views/about.html"			
+		},
+		"error": {
+            "controller": "./views/error",
+            "template": "./views/error.html"
+		},
+		"termsAndConditions": {
+            "controller": "./views/termsAndConditions",
+            "template": "./views/termsAndConditions.html"
+		},
+		"resetPassword": {
+            "controller": "./views/resetPassword",
+            "template": "./views/resetPassword.html"
+		},
+		"myOrganisations": {
+            "controller": "./views/myOrganisations",
+            "template": "./views/myOrganisations.html"
+		},
+		"feedsView": {
+            "controller": "./views/feedsView",
+            "template": "./views/feedsView.html"
+		},
+		"smsValidation": {
+            "controller": "./views/smsValidation",
+            "template": "./views/smsValidation.html"
+		}
+    }
+}

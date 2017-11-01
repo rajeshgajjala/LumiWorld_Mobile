@@ -1,0 +1,38 @@
+
+.tabNavigation{
+	width: 100%;
+	height: 7.5%;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	background-color: rgb(246,249,250);
+}
+
+.tabNavigationbackButton{
+	width: 32%;
+	height: 100%;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;	
+	background-color: rgb(246,249,250);
+}
+
+.tabNavigationinterestButton{
+	width: 33%;
+	height: 100%;
+	float: left;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(246,249,250);
+}
+
+.tabNavigationsettingsButton{
+	width: 33%;
+	height: 100%;	
+	float: right;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(246,249,250);
+}

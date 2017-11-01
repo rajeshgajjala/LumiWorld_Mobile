@@ -1,0 +1,15 @@
+<div>
+	<div data-dojo-type="dojox/mobile/ContentPane" data-dojo-attach-point="enterpriseInfoNode" class="${baseClass}InfoPane">
+		<img data-dojo-attach-point="feedsViewLogoNode" class="${baseClass}Logo" src="${enterpriseLogoURL}">
+		<div data-dojo-attach-point="enterpriseNameTitleNode" class="${baseClass}EnterpriseName">${enterpriseName}</div>
+		<div data-dojo-attach-point="publishedDateNode" class="${baseClass}datePublished">${datePublished}</div>
+	</div>
+	<div style="background:white; border-top-width:1px; border-bottom-width:1px; border-left-width:0px; border-right-width:0px; border-color:grey; border-style:solid; height:8%;">
+		<button data-dojo-attach-point="callButton" class="${baseClass}CallButton">
+			<img data-dojo-attach-point="callButtonImageNode" src="${callButtonLabel}" style="width:90%;"/>
+		</button>
+		<button data-dojo-attach-point="followButton"  class="${baseClass}FollowButton">
+			<img data-dojo-attach-point="followButtonImageNode" src="${followButtonImage}" style="width:90%;"/>
+		</button>
+	</div>
+</div>
